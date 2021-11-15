@@ -149,11 +149,11 @@ def event_handle(event):
 
     if msgType == "text":
         msg = str(event["message"]["text"])
-        if  nsg == "สวัสดี" :
+        if  msg == "สวัสดี" :
             replyObj = TextSendMessage(text="ดีตรงไหน")
-      elif  nsg == "ดีต่อใจ" :
+      elif  msg == "ดีต่อใจ" :
             replyObj = TextSendMessage(text=".....")
-      elif  nsg == "ดูหนังไหม" :
+      elif  msg == "ดูหนังไหม" :
             replyObj = TextSendMessage(text="ดูก็ได้")
       elif :      
             replyObj = TextSendMessage(text="ไม่รู้")
